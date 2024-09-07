@@ -4,4 +4,6 @@ This work introduces an innovative pipeline that effectively integrates Syntheti
 
 ## Active Learning Methods Comparisions
 
-![AL Methods Comparision](assets/sampling_comparison.pdf)
+This comprehensive figure compares all three Uncertainty Sampling strategies—Average, Max, and Sum against Random Sampling. It highlights the strengths and limitations of each method, showing how Uncertainty Sampling methods, particularly Average and Max, significantly accelerate model learning compared to Random Sampling, with the Sum method showing its value in extended training scenarios.
+
+![AL Methods Comparision](assets/al_methods_comparison.png)
