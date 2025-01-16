@@ -1,25 +1,44 @@
-# Active_Learning_YOLOv9
+# Active Learning with YOLOv9
 
-This work introduces an innovative pipeline that effectively integrates Synthetic Data Generation with Active Learning (AL) algorithms to enhance the efficiency of real-world data acquisition and labeling. The proposed pipeline is structured into two distinct phases. The first phase, Synthetic Data Generation, involves creating high-fidelity synthetic data samples that closely mimic real-world scenarios, thereby augmenting the training dataset without extensive manual intervention. This phase establishes a strong foundational dataset that improves initial model performance and generalization. The second phase, Active Learning, utilizes AL techniques to selectively identify and label the most informative real-world data points, optimizing labeling efforts and reducing human labor. By focusing on these strategically chosen samples, the pipeline maximizes data acquisition efficiency and minimizes associated costs.
+This project introduces an innovative pipeline that integrates Synthetic Data Generation with Active Learning (AL) algorithms to enhance the efficiency of real-world data acquisition and labeling. The pipeline is structured into two distinct phases:
 
-## Active Learning Methods Comparison
+### Phase 1: Synthetic Data Generation
+- Create high-fidelity synthetic data samples that closely mimic real-world scenarios.
+- Augment the training dataset without extensive manual intervention.
+- Establish a strong foundational dataset to improve initial model performance and generalization.
 
-This comprehensive figure compares all three Uncertainty Sampling strategies—Average, Max, and Sum against Random Sampling. It highlights the strengths and limitations of each method, showing how Uncertainty Sampling methods, particularly Average and Max, significantly accelerate model learning compared to Random Sampling, with the Sum method showing its value in extended training scenarios.
+### Phase 2: Active Learning
+- Utilize AL techniques to selectively identify and label the most informative real-world data points.
+- Optimize labeling efforts and reduce human labor.
+- Focus on strategically chosen samples to maximize data acquisition efficiency and minimize associated costs.
+
+---
+
+## 📊 Active Learning Methods Comparison
+
+This comprehensive comparison highlights all three Uncertainty Sampling strategies—**Average**, **Max**, and **Sum**—against **Random Sampling**. It demonstrates:
+
+- **Average and Max** strategies significantly accelerate model learning compared to Random Sampling.
+- **Sum** strategy shows its value in extended training scenarios.
 
 ![AL Methods Comparison](assets/al_methods_comparison.png)
 
+---
 
-## All Classes Comparison
+## 📈 All Classes Comparison
 
-This figure provides a comprehensive comparison of three Uncertainty Sampling strategies—Average, Max, and Sum—against Random Sampling. The analysis is conducted across eight distinct classes, illustrating the performance differences of each strategy in handling various class-specific challenges.
+This analysis provides a class-specific comparison of three Uncertainty Sampling strategies—**Average**, **Max**, and **Sum**—against **Random Sampling**. It covers performance across eight distinct classes, illustrating how each strategy handles various challenges.
 
 ![All Classes Comparison](assets/all_classes_comparison.png)
 
-### Comparison of Random Sampling and Uncertainty Sampling
+---
 
-The top row presents images obtained through Random Sampling (RS), while the bottom row features images acquired using Uncertainty Sampling (US). Training sample sizes range from 50 to 200 samples.
+## 🔍 Random Sampling vs. Uncertainty Sampling
 
-<!-- First Row: Random Sampling Images -->
+Below is a visual comparison of training samples obtained through Random Sampling (RS) and Uncertainty Sampling (US). Training sample sizes range from 50 to 200 samples.
+
+### Random Sampling (Top Row)
+
 <div style="display: flex; justify-content: space-between;">
     <div style="flex: 1; padding: 5px;">
         <img src="assets/rand100.jpg" alt="RS-50" style="width: 100%;"/>
@@ -39,10 +58,10 @@ The top row presents images obtained through Random Sampling (RS), while the bot
     </div>
 </div>
 
-<!-- Space between rows -->
 <br/>
 
-<!-- Second Row: Uncertainty Sampling Images -->
+### Uncertainty Sampling (Bottom Row)
+
 <div style="display: flex; justify-content: space-between;">
     <div style="flex: 1; padding: 5px;">
         <img src="assets/avg100.jpg" alt="US-50" style="width: 100%;"/>
